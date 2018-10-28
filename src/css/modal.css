@@ -16,7 +16,7 @@
     border-color: transparent !important;
 }
 
-.upIcon{ /* Icono Modal Close*/ 
+.upIcon{ 
     color:#f6be36;
     font-size: 70px;
 }
@@ -33,5 +33,23 @@
 
 .styloTextNav:hover{ 
     color:#f6be36;
+}
+
+/* Nav*/
+
+.styleMenuIcon{
+    color:blueviolet;
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.styleMenuIcon:hover{
+    color:#f6be36;
+}
+
+.tituloPrincipal{
+    padding-top: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
