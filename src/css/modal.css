@@ -1,0 +1,37 @@
+.styleModal{
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.modal-body{
+    background-color:rgb(0, 0, 0) !important;
+    text-align: center !important;
+}
+
+.modal-content{
+    border:0px !important;
+}
+
+.btn-secondary{
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.upIcon{ /* Icono Modal Close*/ 
+    color:#f6be36;
+    font-size: 70px;
+}
+
+.upIcon:hover { 
+    color:blueviolet;
+}
+
+.styloTextNav{
+    color:blueviolet;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.styloTextNav:hover{ 
+    color:#f6be36;
+}
+
