@@ -1,0 +1,9 @@
+.btonCol{
+    background-color: blueviolet;
+    color: white;
+}
+
+.btonCol:hover{
+    color: rgb(75, 75, 75);
+    background-color:#f6be36;
+}
