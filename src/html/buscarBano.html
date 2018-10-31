@@ -7,24 +7,112 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1533195059" />
+
     <link rel="stylesheet" href="../css/buscarbano.css">
     <link rel="stylesheet" href="../css/modal.css">
     <title>Presentación</title>
 </head>
 <body>
     <!-- Menu-->
-    <nav class="navbar">
-        <div class="navbar-brand styleIcon align-items-center">
-            <a class="nav-link styleMenuIcon" href="#" data-toggle="modal" data-target="#exampleModalLong"><i class="material-icons">menu</i></a>
+    <nav class="navbar colorNav clearfix">
+        <div class="navbar-brand p-0 m-0 float-left">
+            <a class="nav-link styleMenuIcon" href="#" data-toggle="modal" data-target="#exampleModalLong"><i class="material-icons styleMenuIcon">menu</i></a>
         </div>
-    </nav>
+        <span class="navbar-text TituloMenu">
+            Baños cercanos
+        </span>
+    </nav> 
     <!-- Menu-->
     <!-- Mapa-->
-    <div class="container">
+    <div class="container-fluid pt-3">
         <div class="row">
-            <div class="col-md-10 mx-auto">
+            <div class="col-md-12 mx-auto">
+                <section id="map">
+                    <div>
+                        <div style="width:100%; height: 60vh" id="mapContainer"></div>
+                    </div>
+                    
+                </section>
+
                 <!-- aqui el contenido -->
             </div>
+        </div>
+        <div class="row">
+            <section id="listContent">
+                <div class="row filaDato">
+                    <div class="col-md-12 mx-auto"> 
+                        <div class="card">
+                            <div class="card-body">
+                                Nombre 
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row filaDato">
+                    <div class="col-md-12 mx-auto"> 
+                        <div class="card">
+                            <div class="card-body">
+                                Nombre 
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row filaDato">
+                    <div class="col-md-12 mx-auto"> 
+                        <div class="card">
+                            <div class="card-body">
+                                Nombre 
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row filaDato">
+                    <div class="col-md-10 mx-auto"> 
+                        <div class="card">
+                            <div class="card-body">
+                                Nombre
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row filaDato">
+                    <div class="col-md-12 mx-auto"> 
+                        <div class="card">
+                            <div class="card-body">
+                                Nombre 
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mx-auto"> 
+                        <div class="card">
+                            <div class="card-body">
+                                Nombre 
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row filaDato" >
+                    <div class="col-md-12 mx-auto"> 
+                        <div class="card">
+                            <div class="card-body">
+                                Nombre 
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row filaDato">
+                    <div class="col-md-10 mx-auto"> 
+                        <div class="card">
+                            <div class="card-body">
+                                Nombre 
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     <!-- Mapa-->
@@ -37,7 +125,7 @@
                     <a class="nav-link active" href="../html/presentacion.html">
                         <p class="styloTextNav">Inicio</p>
                     </a>
-                    <a class="nav-link active" href="../html/buscarBano.html">
+                    <a class="nav-link active" href="../html/buscarBaño.html">
                         <p class="styloTextNav">Baños</p>
                     </a>
                     <a class="nav-link active" href="../html/perfil.html">
@@ -73,6 +161,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>    
     <script src="../js/buscarbano.js"></script>
 </body>
 </html>
