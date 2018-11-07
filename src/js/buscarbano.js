@@ -99,3 +99,60 @@ function updaeteLocation(position) {
     document.getElementById("data").innerHTML = datos;
 */
  }
+
+ function showRoute(ecoFound){
+
+    let routingParameters = {
+      // el modo de ir por la ruta:
+      'mode': 'fastest;pedestrian',//'fastest;car',
+      // punto de inicio de la ruta:
+      'waypoint0': 'geo!' + markerUser.getPosition().lat + ',' + markerUser.getPosition().lng,
+      // punto final de la ruta:
+      'waypoint1': 'geo!' + ecoFound.position.lat + ',' + ecoFound.position.lng,
+      'representation': 'display'
+    };
+   
+    var onResult = function (result) {
+      var route,
+          routeShape,
+          startPoint,
+          endPoint,
+          linestring;
+      if (result.response.route) {
+          // Pick the first route from the response:
+          route = result.response.route[0];
+          // Pick the route's shape:
+          routeShape = route.shape;
+   
+          // Create a linestring to use as a point source for the route line
+          linestring = new H.geo.LineString();
+   
+          // Push all the points in the shape into the linestring:
+          routeShape.forEach(function (point) {
+              var parts = point.split(',');
+              linestring.pushLatLngAlt(parts[0], parts[1]);
+          });
+   
+          var routeLine = new H.map.Polyline(linestring, {
+              style: { strokeColor: 'green', lineWidth: 5 }
+          });
+         // Add the route polyline and the two markers to the map:
+          map.addObjects([routeLine]);
+          // Set the map's viewport to make the whole route visible:
+          map.setViewBounds(routeLine.getBounds());
+          watchId = navigator.geolocation.watchPosition(updaeteLocation, errorLocation, optionsGPS);
+      }
+    };
+   
+    var router = platform.getRoutingService();
+   
+    // Call calculateRoute() with the routing parameters,
+    // the callback and an error callback function (called if a
+    // communication error occurs):
+    router.calculateRoute(routingParameters, onResult,
+        function (error) {
+            console.log(error.message);
+        });
+   
+   
+   }
