@@ -22,11 +22,11 @@
 }
 
 .upIcon:hover { 
-    color:blueviolet;
+    color: #6703a0;
 }
 
 .styloTextNav{
-    color:blueviolet;
+    color: #6703a0;
     font-size: 25px;
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -61,6 +61,6 @@
 }
 
 .colorNav{
-    background-color: blueviolet;
+    background-color:  #6703a0;
 }
 
