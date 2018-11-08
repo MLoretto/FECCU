@@ -1,0 +1,46 @@
+body {
+    background-color: #6703a0;
+    width: 100%;
+    height: calc(100vh - 0px);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.alinVertical{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenFondo {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: 8;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: 8;
+}
+
+@-webkit-keyframes example {
+    from {
+        background-color: #6703a0;
+    }
+    to {
+        background-color:rgb(151, 23, 255);
+    }
+}
+
+@keyframes example {
+    from {
+        background-color: #6703a0;
+    }
+    to {
+        background-color:  rgb(151, 23, 255);
+    }
+}
+
