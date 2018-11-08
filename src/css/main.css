@@ -7,6 +7,15 @@ body {
     left: 0px;
 }
 
+.colBotTex{
+    color:#6703a0;
+}
+
+.colBotTex:hover{
+    color:#1f0031;
+    text-decoration:none; 
+}
+
 .alinVertical{
     height: 80vh;
     display: flex;
