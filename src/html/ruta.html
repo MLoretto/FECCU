@@ -8,13 +8,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1533195059" />
-
-    <link rel="stylesheet" href="../css/buscarbano.css">
+    <link rel="stylesheet" href="../css/ruta.css">
     <link rel="stylesheet" href="../css/modal.css">
     <title>Ruta</title>
 </head>
 <body>
-    <!-- Menu-->
+<!-- Menu-->
     <nav class="navbar colorNav clearfix">
         <div class="navbar-brand p-0 m-0 float-left">
             <a class="nav-link styleMenuIcon" href="#" data-toggle="modal" data-target="#exampleModalLong"><i class="material-icons styleMenuIcon">menu</i></a>
@@ -23,8 +22,8 @@
             Sigue la Ruta
         </span>
     </nav> 
-    <!-- Menu-->
-    <!-- Mapa-->
+<!-- Menu-->
+<!-- Mapa Ruta-->
     <div class="container-fluid pt-3">
         <div class="row">
             <div class="col-12 mx-auto" id="map">
@@ -32,14 +31,14 @@
             </div>
         </div>
     </div>
- <!-- Mapa-->
+ <!-- Mapa Ruta-->
  <!-- Cards-->
     <div class="container-fluid">
         <div class="row p-3">
             <div class="card col-12 p-0">
                 <div class="card-header">
                     <h5 class="d-inline float-left m-0 p-1">Baño Público</h5>
-                    <a href="ruta.html" class="btn bg-info d-inline float-right rounded-circle text-white">IR</a>
+                    <a href="ruta.html" class="btn bg-info d-inline float-right rounded-circle text-white">QR</a>
                 </div>
                 <div class="card-body h-25">
                     <div class="d-inline-block align-top" style="height: 100px;">
@@ -57,33 +56,36 @@
 <!-- Cards-->
 <!-- Modal -->
     <div class="modal fade styleModal justify-content-center" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-       <div class="modal-dialog justify-content-center" role="document">
-           <div class="modal-content">
-               <div class="modal-body">
-                   <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="material-icons upIcon">keyboard_arrow_up</i></button>
+        <div class="modal-dialog justify-content-center" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <button type="button" class="btn btn-secondary p-0" data-dismiss="modal"><i class="material-icons upIcon">keyboard_arrow_up</i></button>
+                     <a class="nav-link active" href="">
+                         <img class="img-responsive" src="../img/logosolo.png" width="100" height="100" alt="">
+                     </a>
                     <a class="nav-link active" href="../html/presentacion.html">
-                        <p class="styloTextNav">Home</p>
-                    </a>
-                    <a class="nav-link active" href="../html/buscarbano.html">
-                        <p class="styloTextNav">Baños</p>
-                    </a>
-                    <a class="nav-link active" href="../html/perfil.html">
-                        <p class="styloTextNav">Mi Perfil</p>
-                    </a>
-                    <a class="nav-link active" href="../html/convenioclc.html">
-                        <p class="styloTextNav">Convenio CLC</p>
-                    </a>
-                    <a class="nav-link active" href="../html/asociados.html">
-                        <p class="styloTextNav">Convenios</p>
-                    </a>
-                    <a class="nav-link active" href="../html/login.html">
-                        <p class="styloTextNav">Cerrar Sesión</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-   </div>
-   <!-- End Modal -->
+                         <p class="styloTextNav m-0">Home</p>
+                     </a>
+                     <a class="nav-link active" href="../html/buscarbano.html">
+                         <p class="styloTextNav m-0">Baños</p>
+                     </a>
+                     <a class="nav-link active" href="../html/credencial.html">
+                         <p class="styloTextNav m-0">Credencial</p>
+                     </a>
+                     <a class="nav-link active" href="../html/convenioclc.html">
+                         <p class="styloTextNav m-0">Convenio CLC</p>
+                     </a>
+                     <a class="nav-link active" href="../html/asociados.html">
+                         <p class="styloTextNav m-0">Convenios</p>
+                     </a>
+                     <a class="nav-link active" href="../html/login.html">
+                         <p class="styloTextNav m-0">Cerrar Sesión</p>
+                     </a>
+                 </div>
+             </div>
+         </div>
+    </div>
+<!-- End Modal -->
     <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
     <script>
     // Initialize Firebase

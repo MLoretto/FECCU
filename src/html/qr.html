@@ -8,8 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1533195059" />
-
-    <link rel="stylesheet" href="../css/buscarbano.css">
+    <link rel="stylesheet" href="../css/qr.css">
     <link rel="stylesheet" href="../css/modal.css">
     <title>Escanea el Código</title>
 </head>
@@ -24,7 +23,7 @@
         </div>
     </nav> 
 <!-- Menu-->
-    <!-- Mapa-->
+<!-- QR CAM-->
     <div class="container-fluid pt-3">
         <div class="row">
             <div class="col-12 mx-auto" id="map">
@@ -32,7 +31,7 @@
             </div>
         </div>
     </div>
- <!-- Mapa-->
+ <!-- QR CAM-->
  <!-- Cards-->
     <div class="container-fluid">
         <div class="row p-3">
@@ -57,32 +56,35 @@
 <!-- Cards-->
 <!-- Modal -->
     <div class="modal fade styleModal justify-content-center" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-       <div class="modal-dialog justify-content-center" role="document">
-           <div class="modal-content">
-               <div class="modal-body">
-                   <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="material-icons upIcon">keyboard_arrow_up</i></button>
+        <div class="modal-dialog justify-content-center" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <button type="button" class="btn btn-secondary p-0" data-dismiss="modal"><i class="material-icons upIcon">keyboard_arrow_up</i></button>
+                     <a class="nav-link active" href="">
+                         <img class="img-responsive" src="../img/logosolo.png" width="100" height="100" alt="">
+                     </a>
                     <a class="nav-link active" href="../html/presentacion.html">
-                        <p class="styloTextNav">Home</p>
-                    </a>
-                    <a class="nav-link active" href="../html/buscarbano.html">
-                        <p class="styloTextNav">Baños</p>
-                    </a>
-                    <a class="nav-link active" href="../html/perfil.html">
-                        <p class="styloTextNav">Mi Perfil</p>
-                    </a>
-                    <a class="nav-link active" href="../html/convenioclc.html">
-                        <p class="styloTextNav">Convenio CLC</p>
-                    </a>
-                    <a class="nav-link active" href="../html/asociados.html">
-                        <p class="styloTextNav">Convenios</p>
-                    </a>
-                    <a class="nav-link active" href="../html/login.html">
-                        <p class="styloTextNav">Cerrar Sesión</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-   </div>
+                         <p class="styloTextNav m-0">Home</p>
+                     </a>
+                     <a class="nav-link active" href="../html/buscarbano.html">
+                         <p class="styloTextNav m-0">Baños</p>
+                     </a>
+                     <a class="nav-link active" href="../html/credencial.html">
+                         <p class="styloTextNav m-0">Credencial</p>
+                     </a>
+                     <a class="nav-link active" href="../html/convenioclc.html">
+                         <p class="styloTextNav m-0">Convenio CLC</p>
+                     </a>
+                     <a class="nav-link active" href="../html/asociados.html">
+                         <p class="styloTextNav m-0">Convenios</p>
+                     </a>
+                     <a class="nav-link active" href="../html/login.html">
+                         <p class="styloTextNav m-0">Cerrar Sesión</p>
+                     </a>
+                 </div>
+             </div>
+         </div>
+    </div>
    <!-- End Modal -->
     <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
     <script>
