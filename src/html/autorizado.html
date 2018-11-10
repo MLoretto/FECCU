@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1533195059" />
-    <link rel="stylesheet" href="../css/buscarbano.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/modal.css">
-    <title>Busca tu baño</title>
+    <title>Acceda a baño</title>
 </head>
 <body>
 <!-- Menu-->
@@ -23,32 +22,83 @@
         </div>
     </nav> 
 <!-- Menu-->
-<!-- Mapa-->
-    <div class="container-fluid pt-3">
-        <div class="row">
-            <div class="col-12 mx-auto" id="map">
-                <div style="width:100%; height: 60vh" id="mapContainer"></div>
+<!--Contenido-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center mt-3 mx-auto pb-3">
+            <div class="card" style="width: auto;">
+                <div class="card-header">
+                    <h4>AUTORIZADO</h4>
+                </div>
+                <img class="card-img-top" src="../img/Autorizado.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Sergio Contreras Madrid</h4>
+                </div>
+                <div class="pb-2">
+                    <button class="btn btonCol"> <a class="text-white" href="../html/presentacion.html">OK</a></button>
+                </div>
+                <div class="card-footer text-muted">
+                    <p class="card-text small">Pertenezco a Fundación Crhon y Colitis Ulcerosa junto a ti</p>
+                </div>
             </div>
         </div>
     </div>
- <!-- Mapa-->
- <!-- Cards-->
-    <div  id="fileContainer" class="container-fluid">
-    </div>
-<!-- Cards-->
+</div>
+<!--Contenido-->
+<!-- Footer -->
+    <footer class="p-0">
+        <div class="container-fluid bg-info p-5">
+          <div class="row">
+            <div class="col-md-4">
+              <span class="copyright text-white">Copyright &copy; FECCU 2018</span>
+              <img class="mx-auto" style="height:30px;" src="../img/logosolo.png">
+            </div>
+            <div class="col-md-4">
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-inline quicklinks">
+                <li class="list-inline-item">
+                  <a class="text-white" href="#">Politicas de Privacidad</a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="text-white" href="#">Terminos y Condiciones</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+<!-- Footer -->
 <!-- Modal -->
     <div class="modal fade styleModal justify-content-center" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-       <div class="modal-dialog justify-content-center" role="document">
-           <div class="modal-content">
-               <div class="modal-body p-0">
-                   <button type="button" class="btn btn-secondary p-0" data-dismiss="modal"><i class="material-icons upIcon">keyboard_arrow_up</i></button>
+        <div class="modal-dialog justify-content-center" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <button type="button" class="btn btn-secondary p-0" data-dismiss="modal"><i class="material-icons upIcon">keyboard_arrow_up</i></button>
                     <a class="nav-link active" href="">
                         <img class="img-responsive" src="../img/logosolo.png" width="100" height="100" alt="">
                     </a>
-                   <a class="nav-link active" href="../html/presentacion.html">
+                    <a class="nav-link active" href="../html/presentacion.html">
                         <p class="styloTextNav m-0">Home</p>
                     </a>
-                    <a class="nav-link active" href="../html/buscarbano.html">
+                    <a class="nav-link active" href="../html/buscarBano.html">
                         <p class="styloTextNav m-0">Baños</p>
                     </a>
                     <a class="nav-link active" href="../html/credencial.html">
@@ -66,8 +116,8 @@
                 </div>
             </div>
         </div>
-   </div>
-   <!-- End Modal -->
+    </div>
+<!-- End Modal -->
     <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
     <script>
     // Initialize Firebase
@@ -84,10 +134,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
-    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
-    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
-    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>    
-    <script src="../js/buscarbano.js"></script>
 </body>
 </html>

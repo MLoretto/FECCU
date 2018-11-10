@@ -4,11 +4,11 @@ const iconUserSGV = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http:/
 
 let posActual;
 let BanosArray = [
-    {"nombre":"Eco Baños", "direccion":"Estado 149-197, Santiago, Región Metropolitana","lat":-33.441125, "lng":-70.649226},//-33.441125, -70.649226
-    {"nombre":"Eco Baños subterraneo", "direccion":"Paseo Ahumada 360, Santiago, Región Metropolitana","lat":-33.438974 , "lng":-70.651071},//-33.438974, -70.651071
-    {"nombre":"Baños Publicos", "direccion":"Chacabuco, Maipú, Región Metropolitana","lat":-33.508946, "lng":-70.756036}//-33.508946, -70.756036
+    {id:'1234567890', "nombre":"Eco Baños", "direccion":"Estado 149-197, Santiago, Región Metropolitana","lat":-33.441125, "lng":-70.649226},//-33.441125, -70.649226
+    {id:'1234567890', "nombre":"Eco Baños subterraneo", "direccion":"Paseo Ahumada 360, Santiago, Región Metropolitana","lat":-33.438974 , "lng":-70.651071},//-33.438974, -70.651071
+    {id:'1234567890', "nombre":"Baños Publicos", "direccion":"Chacabuco, Maipú, Región Metropolitana","lat":-33.508946, "lng":-70.756036}//-33.508946, -70.756036
+//aqui    
 ];
-
 let primeraLectura = false;
 
 //Paso 1: inicializar la plataforma
@@ -202,7 +202,7 @@ function showPanelQR(index, data){
             <div class="card col-12 p-0">
                 <div class="card-header">
                     <h5 class="d-inline float-left m-0 p-1">${data[index].nombre}</h5>
-                    <a href="#" onclick='gotoQR()' class="btn bg-info d-inline float-right rounded-circle text-white">QR</a>
+                    <a href="#" onclick='gotoQR()' class="btn bg-info d-inline float-right rounded-circle text-white">IR</a>
                 </div>
                 <div class="card-body h-25">
                     <div class="d-inline-block align-top" style="height: 100px;">
@@ -219,6 +219,7 @@ function showPanelQR(index, data){
     fileContainer.innerHTML += fila;
 
     localStorage.setItem("selectedBano",JSON.stringify(data[index]));
+    localStorage.setItem("selectId", data[index].id);
 }
 
 function gotoQR(){
